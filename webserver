@@ -1,0 +1,6 @@
+#!/bin/bash
+yum install httpd git -y
+service httpd start
+chkconfig httpd on
+cd /var/www/html
+echo "Testpage" > index.html
